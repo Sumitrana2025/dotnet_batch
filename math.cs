@@ -1,39 +1,60 @@
 using System;
-namespace Mathematics {
 
-    public class Add {
-        public Add (int a, int b) {
-            System.Console.WriteLine("Addition: " + a + " + " + b + " = " + (a + b));
+namespace math
+ {
+     class Operations
+     {
+         static void Main(string[] args)
+         {
+            math.Addition.Add();
+            math.Subtraction.Sub();
+            math.Multiplication.Mul();
+            math.Division.Div();
+    
+         }
+     }
+    class Addition
+    {
+        public static void Add()
+        {
+            int num1=15;
+            int num2=5;
+            int resultAdd;
+            resultAdd=num1+num2;
+            Console.WriteLine("Using class, Addition of two numbers : "+ resultAdd);
         }
     }
-
-    public class Sub {
-        public Sub (int a, int b) {
-            System.Console.WriteLine("Subtraction: " + a + " - " + b + " = " + (a - b));
+    class Subtraction
+    {
+        public static void Sub()
+        {
+            int num1=15;
+            int num2=5;
+            int resultSub;
+            resultSub=num1-num2;
+            Console.WriteLine("Using class, Subtraction of two numbers : "+ resultSub);
         }
     }
-
-    public class Mul {
-        public Mul (int a, int b) {
-            System.Console.WriteLine("Multiplication: " + a + " * " + b + " = " + (a * b));
+    class Multiplication
+    {
+        public static void Mul()
+        {
+            int num1=15;
+            int num2=5;
+            int resultMul;
+            resultMul=num1*num2;
+            Console.WriteLine("Using class, Multiplication of two numbers : "+ resultMul);
         }
     }
-
-    public class Div {
-        public Div (int a, int b) {
-            System.Console.WriteLine("Division: " + a + " / " + b + " = " + (a / b));
+    class Division
+    {
+        public static void Div()
+        {
+            int num1=15;
+            int num2=5;
+            int resultDiv;
+            resultDiv=num1/num2;
+            Console.WriteLine("Using class, Division of two numbers : "+ resultDiv);
         }
     }
-
-    class Operations {
-        static void Main(string[] args) {
-            Console.WriteLine("Enter Two Numbers: ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-            Add addObj = new Add(a, b);
-            Sub subObj = new Sub(a, b);
-            Mul mulObj = new Mul(a, b);
-            Div divObj = new Div(a, b);
-        }
-    }
-}
+ }
