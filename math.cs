@@ -6,19 +6,21 @@ namespace math
      {
          static void Main(string[] args)
          {
-            math.Addition.Add();
-            math.Subtraction.Sub();
-            math.Multiplication.Mul();
-            math.Division.Div();
+            int num1=15;
+            int num2=5;
+            math.Addition.Add(num1,num2);
+            math.Subtraction.Sub(num1,num2);
+            math.Multiplication.Mul(num1,num2);
+            math.Division.Div(num1,num2);
+            
     
          }
      }
     class Addition
     {
-        public static void Add()
+        public static void Add(int num1, int num2)
         {
-            int num1=15;
-            int num2=5;
+            
             int resultAdd;
             resultAdd=num1+num2;
             Console.WriteLine("Using class, Addition of two numbers : "+ resultAdd);
@@ -26,10 +28,9 @@ namespace math
     }
     class Subtraction
     {
-        public static void Sub()
+        public static void Sub(int num1, int num2)
         {
-            int num1=15;
-            int num2=5;
+            
             int resultSub;
             resultSub=num1-num2;
             Console.WriteLine("Using class, Subtraction of two numbers : "+ resultSub);
@@ -37,10 +38,9 @@ namespace math
     }
     class Multiplication
     {
-        public static void Mul()
+        public static void Mul(int num1, int num2)
         {
-            int num1=15;
-            int num2=5;
+            
             int resultMul;
             resultMul=num1*num2;
             Console.WriteLine("Using class, Multiplication of two numbers : "+ resultMul);
@@ -48,10 +48,9 @@ namespace math
     }
     class Division
     {
-        public static void Div()
+        public static void Div(int num1, int num2)
         {
-            int num1=15;
-            int num2=5;
+           
             int resultDiv;
             resultDiv=num1/num2;
             Console.WriteLine("Using class, Division of two numbers : "+ resultDiv);
