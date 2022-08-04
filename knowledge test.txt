@@ -4,6 +4,6 @@
 
 3. A - Generally smaller data types are automatically converted to larger data types as smaller takes less space while bigger cannot fit in smaller data type.
 
-4. D  - TimeSpan represents a time interval that is difference between two times
+4. D  - TimeSpan represents a time interval that is difference between two time period.
 
 5. D  - String can be created using string keyword eg. string str1
