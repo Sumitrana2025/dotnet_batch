@@ -1,0 +1,9 @@
+1. A-  Common Language Runtime-it is platform which enables for execution of .net architecture.
+
+2.B-  Constant-The values declared by using the const keyword cannot be changed during the execution of the program.
+
+3. A - Generally smaller data types are automatically converted to larger data types as smaller takes less space while bigger cannot fit in smaller data type.
+
+4. D  - TimeSpan represents a time interval that is difference between two times
+
+5. D  - String can be created using string keyword eg. string str1
