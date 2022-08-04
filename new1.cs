@@ -23,8 +23,20 @@ namespace CSharpTutorials
     {
         static void Main(string[] args)
         {
-            string message= "Hello World!!";
-            Console.WriteLine(message);
+            int num1,num2,result;
+            Console.Write("Enter the first number: ");
+            num1=Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            num2=Convert.ToInt32(Console.ReadLine());
+            result=num1+num2;
+            Console.WriteLine(string.Format($"Addition of {num1} and {num2} is:  "));
+            result=num1-num2;
+            Console.WriteLine(string.Format($"Subtraction of {num1} and {num2} is:  "));
+            result=num1*num2;
+            Console.WriteLine(string.Format($"Multiplication of {num1} and {num2} is:  "));
+            result=num1/num2;
+            Console.WriteLine(string.Format($"Division of {num1} and {num2} is:  "));
+            
         }
     }
     
