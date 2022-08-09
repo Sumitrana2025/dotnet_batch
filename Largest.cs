@@ -56,7 +56,7 @@ namespace DataStructure
      {
         public static void linklist()
         {
-            LinkedList<int> list=new LinkedList<int>();
+            var list=new LinkedList<int>();
             list.AddLast(2);
             list.AddLast(43);
             list.AddLast(56);
