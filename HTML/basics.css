@@ -1,0 +1,64 @@
+body {
+    
+    
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+  p.one {
+    border-style: solid;
+    border-color: green;
+  } 
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #students td, #students th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #students tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #students tr:hover {background-color: #ddd;}
+  
+  #students th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  
+  body {
+    counter-reset: selectors;
+  }
+  
+  h2::before {
+    counter-increment: selectors;
+    content: counter(selectors) ". " ;
+  }
+
+  h1 {
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  #bordering { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 round;
+    
+  }
+  img {
+    border: 1px solid rgb(47, 187, 12);
+    border-radius: 4px;
+    padding: 5px;
+    width: 380px;
+  }
