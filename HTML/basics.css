@@ -8,11 +8,14 @@ body {
     color: navy;
     margin-left: 20px;
   }
+  
   p.one {
     border-style: solid;
     border-color: green;
   } 
-  #customers {
+  
+  
+  #students {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -62,3 +65,4 @@ body {
     padding: 5px;
     width: 380px;
   }
+
