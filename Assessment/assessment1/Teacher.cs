@@ -42,7 +42,6 @@ namespace Teacher
                     Console.WriteLine("Enter the Teacher Id that you want to delete: ");
                     string deleted_id = Console.ReadLine();
                     deleted_id = "TeacherId: " + deleted_id;
-                    
                     foreach(string line in list1)
                     {
                         if (line.Contains(deleted_id))
@@ -52,9 +51,7 @@ namespace Teacher
                         else
                         {
                             list2.AddLast(line);
-                        }
-                                
-                            
+                        }      
                     }
                     foreach(string line in list2)
                     Console.WriteLine(line);
@@ -63,10 +60,17 @@ namespace Teacher
                     foreach(string i in list2)
                     writer.WriteLine(i);
                     writer.Close();
-                    Console.WriteLine("DATA DELETED SUCCESSFULLY!!");
-            
-                        
+                    bool isEqual = Enumerable.SequenceEqual(list1,list2);
+                    if(isEqual)
+                    {
+                        Console.WriteLine("Teacher Id typed is not present");
+                    }
+                    else
+                    {
+                        Console.WriteLine("DATA DELETED SUCCESSFULLY!!"); 
+                    }  
                     break;
+                    
 
 
                 case "insert":
@@ -75,22 +79,17 @@ namespace Teacher
                     Console.WriteLine("Enter the Teacher Id that you want to insert: ");
                     string inserted_id = Console.ReadLine();
                     
-
-                    
-
                     Console.WriteLine("Enter the Teacher Name that you want to insert: ");
                     string inserted_name = Console.ReadLine();
 
                     Console.WriteLine("Enter the Teacher class that you want to insert: ");
                     string inserted_class = Console.ReadLine();
-
                     string insert_data = "TeacherId: " +  inserted_id + " | TeacherName: " + inserted_name + " | Class: " + inserted_class; 
                     
 
                     list1.AddLast(insert_data);
                     Console.WriteLine("Data inserted");
                     Console.WriteLine("Updated list");
-
                     foreach(string line in list1)
                     Console.WriteLine(line);
                     TextWriter writer1 = new StreamWriter(path);
@@ -99,7 +98,6 @@ namespace Teacher
                     writer1.WriteLine(i);
                     writer1.Close();
                     Console.WriteLine("DATA INSERTED SUCCESSFULLY!!");
-                    
                     break;
                 default:
                     Console.WriteLine("Option typed is invalid. Please select correct option");
