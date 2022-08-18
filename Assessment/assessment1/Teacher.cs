@@ -23,7 +23,7 @@ namespace Teacher
             Console.WriteLine("Type view to view data");
             Console.WriteLine("Type delete to delete data");
             Console.WriteLine("Type insert to insert data");
-            //Console.ReadKey();
+            
             
             string Menu_option = Console.ReadLine();
             switch(Menu_option)
@@ -42,6 +42,7 @@ namespace Teacher
                     Console.WriteLine("Enter the Teacher Id that you want to delete: ");
                     string deleted_id = Console.ReadLine();
                     deleted_id = "TeacherId: " + deleted_id;
+                    
                     foreach(string line in list1)
                     {
                         if (line.Contains(deleted_id))
@@ -52,17 +53,19 @@ namespace Teacher
                         {
                             list2.AddLast(line);
                         }
-                        
+                                
+                            
                     }
                     foreach(string line in list2)
                     Console.WriteLine(line);
-                    string path2 = @"C:\Users\Sumit.Rana\OneDrive\Documents\GitHub\dotnet_batch\Assessment\assessment1\teacherData.txt";
-                    TextWriter writer = new StreamWriter(path2);
+                    TextWriter writer = new StreamWriter(path);
                     writer.Flush();
                     foreach(string i in list2)
                     writer.WriteLine(i);
                     writer.Close();
                     Console.WriteLine("DATA DELETED SUCCESSFULLY!!");
+            
+                        
                     break;
 
 
@@ -71,6 +74,9 @@ namespace Teacher
 
                     Console.WriteLine("Enter the Teacher Id that you want to insert: ");
                     string inserted_id = Console.ReadLine();
+                    
+
+                    
 
                     Console.WriteLine("Enter the Teacher Name that you want to insert: ");
                     string inserted_name = Console.ReadLine();
@@ -79,6 +85,7 @@ namespace Teacher
                     string inserted_class = Console.ReadLine();
 
                     string insert_data = "TeacherId: " +  inserted_id + " | TeacherName: " + inserted_name + " | Class: " + inserted_class; 
+                    
 
                     list1.AddLast(insert_data);
                     Console.WriteLine("Data inserted");
@@ -86,19 +93,16 @@ namespace Teacher
 
                     foreach(string line in list1)
                     Console.WriteLine(line);
-
-                    string path1 = @"C:\Users\Sumit.Rana\OneDrive\Documents\GitHub\dotnet_batch\Assessment\assessment1\teacherData.txt";
-                    TextWriter writer1 = new StreamWriter(path1);
+                    TextWriter writer1 = new StreamWriter(path);
                     writer1.Flush();
                     foreach(string i in list1)
                     writer1.WriteLine(i);
                     writer1.Close();
                     Console.WriteLine("DATA INSERTED SUCCESSFULLY!!");
-                   
+                    
                     break;
                 default:
                     Console.WriteLine("Option typed is invalid. Please select correct option");
-                 
                     break;
             }
 
