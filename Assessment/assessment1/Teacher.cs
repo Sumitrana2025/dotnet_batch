@@ -84,6 +84,7 @@ namespace Teacher
 
                     Console.WriteLine("Enter the Teacher class that you want to insert: ");
                     string inserted_class = Console.ReadLine();
+
                     string insert_data = "TeacherId: " +  inserted_id + " | TeacherName: " + inserted_name + " | Class: " + inserted_class; 
                     
 
@@ -99,6 +100,8 @@ namespace Teacher
                     writer1.Close();
                     Console.WriteLine("DATA INSERTED SUCCESSFULLY!!");
                     break;
+
+                    
                 default:
                     Console.WriteLine("Option typed is invalid. Please select correct option");
                     break;
