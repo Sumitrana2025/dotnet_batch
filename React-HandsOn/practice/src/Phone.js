@@ -9,7 +9,7 @@ class Phone extends Component {
     return (
       <div>
         <h1>
-            My Phone is {this.state.brand}
+            My Phone is {this.state.model}
         </h1>
       </div>
     )
