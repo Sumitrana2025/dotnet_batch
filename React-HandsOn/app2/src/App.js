@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
+  return <div className="App">
+    <AppChild battery="80%" />
+     
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,7 +20,13 @@ function App() {
         </a>
       </header>
     </div>
-  );
 }
+
+function AppChild(props){
+  return <span>
+      The battery is {props.battery}
+    </span>
+}
+    
 
 export default App;
