@@ -18,8 +18,6 @@ class Car extends Component{
                 <h1>My Car is  {this.state.brand}</h1>
             </div>
         );
-
         }
-
     }
 export default Car;

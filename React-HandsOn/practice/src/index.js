@@ -12,7 +12,6 @@ root.render(
     <Car />
     <Engine/>
   
-  
   </React.StrictMode>
 );
 
