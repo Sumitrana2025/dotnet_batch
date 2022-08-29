@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: #ada0d9;
+        }
+        .container{
+            background-color: #99efd2;
+            border: 3px solid #ff8800;
+            /* We can set padding/margin for top, right, bottom and left like this */
+            /* padding-top: 5px;
+            padding-bottom: 20px;
+            padding-left: 6px;
+            padding-right: 10px; */
+
+            /* padding/margin: top right bottom left */
+            /* padding: 40px 20px 47px 26px; */
+
+            /* padding/margin: y(bottom/top) x(right/left) */
+            padding: 32px 27px;
+            margin: 14px 19px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis fuga velit magnam asperiores dicta aliquam repudiandae nesciunt at enim. Quaerat, ab voluptates.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis fuga velit magnam asperiores dicta aliquam repudiandae nesciunt at enim. Quaerat, ab voluptates.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis fuga velit magnam asperiores dicta aliquam repudiandae nesciunt at enim. Quaerat, ab voluptates.</p>
+    </div>
+</body>
+</html>

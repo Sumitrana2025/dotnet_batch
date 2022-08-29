@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--Our HTML code starts here-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML parctice</title>
+    <!-- To link external css file just type link and in dropdown choose link:css -->
+    <link rel="stylesheet" href="prac.css">
+    <!-- To link external js file just type scr and in dropdown choose script:src -->
+    <script src="prac.js"></script>
+</head>
+<body>
+    <h1>Sumit</h1>
+    <p>This is Sumit Rana</p>
+    <!-- strong tag is used to bold the sentence and em tag is used to show the sentence in Italic -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptas sequi totam alias odio unde excepturi modi, ullam, dicta, autem <strong>this is strong</strong> nemo deserunt nihil iste sunt? Magnam aspernatur consequatur suscipit <em>This is emphasized</em> ipsum sint tempore voluptates recusandae natus, vel laboriosam ut vitae hic.</p>
+    <!-- br tag is used to break the line and it is a self closing tag -->
+    <p>first <br> this is a new line </p>
+    <!-- hr tag is horizontal rule which is used to show the horizontal line. -->
+    <hr>
+    <!-- target=_blank is used to open the website in a new tab -->
+    <a href="https://www.google.com" target="_blank">Go to google</a><br>
+    <a href="https://www.youtube.com" target="_blank">Go to youtube</a><br>
+    <a href="https://www.facebook.com" target="_blank">Go to facebook</a><br>
+    <a href="https://www.instagram.com" target="_blank">Go to instagram</a><br>
+    <!-- to access the internal links type / and choose from dropdown options shown  -->
+    <a href="/prac.js" target="_blank">Js file</a>
+    <!-- inside src we need to give the path of image file or need to save the file in same folder as html file. If the image is not shown then it will show the msg that is written in alt  -->
+    <img src="sumit.png" alt="Error loading image">
+    <!-- we can give the width and height using its attributes but its preferable to do it with css -->
+    <img src="https://source.unsplash.com/200x110/?nature,water" alt="remote image" width="250" height="150">
+
+
+
+    <!-- there are square,disc and circle type of numbering in unordered list  -->
+    <ul type="square">
+        <li>This is first unordered list</li>
+        <li>This is second unordered list</li>
+        <!-- you can do nesting lists as well -->
+        <ul>
+            <li>Another one</li>
+            <li>Another two</li>
+        </ul>
+        <li>This is third unordered list</li>
+    </ul>
+    <!-- by using type attribute we can chnage the type of numbering in ordered list -->
+    <ol type="I">
+        <li>This is first ordered list</li>
+        <li>This is second ordered list</li>
+        <li>This is third ordered list</li>     
+    </ol>
+
+
+    
+    <h3>HTML Table</h3>
+    <Table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee Id</th>
+                <th>Employee Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sumit</td>
+                <td>456</td>
+                <td>HTML expert</td>
+            </tr>
+            <tr>
+                <td>Shubham</td>
+                <td>4546</td>
+                <td>Csharp</td>
+            </tr>
+            <tr>
+                <td>Vikram</td>
+                <td>46556</td>
+                <td>Reactjs</td>
+            </tr>
+        </tbody>
+    </Table>
+
+
+    <h3>HTML Forms</h3>
+    <form action="backend.php">
+        <!-- label is useful for when we click on Name word it will enable the text box or check the box in case of checkbox -->
+        <label for="name">Name</label>
+        <div>
+           <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <!-- if you want to check the box by default use the code which is commented-->
+        <label for="eligible">Are you eligible </label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="eligible">
+            <!-- Are you eligible <input type="checkbox" name="myEligibility" checked -->
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender">  Female <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <textarea name="myText"  cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <label for="car">Car</label>
+        <!-- use word selected to select default value in default box as shown in commented line-->
+        <div>
+            <select name="myCar" id="car">
+                <option value="Ford">Ford</option>          
+                <option value="MG" >MGHector</option>          
+                <option value="Kia">Kia</option> 
+                <!-- <option value="BMW" selected>BMW </option>  -->
+
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now"> 
+            <input type="reset" value="Reset Now"> 
+        </div>
+    </form>
+
+
+
+    <!-- paragraph is an block element and span is an inline element -->
+    <p style = "border : 2px solid red;" >this is a paragraph</p> <p style = "border : 2px solid blue;">this is also a paragraph</p>
+    <span style = "border : 2px solid red;">this is a span</span> <span style = "border : 2px solid blue;">this is also a span</span>
+   
+
+
+    <!-- we can have only one id while one class can have many element and more than one element can have same class  -->
+    <h3>Id and classes in HTML</h3>
+    <div id=" mainBox" class="redBg">
+        this is mainbox
+    </div>
+
+    <!-- . is for class and # is for id just type div.Redbg for class and div#main for id -->
+    <div class="Redbg"></div>  
+    <div id="main"></div>
+
+    <!-- emmet takes div tag as default just type .classname -->
+    <div class="spanbg"></div>
+
+    <!-- Creating multiple elements using emmet -->
+    <!-- span class="Class Class2 Class3 + tab tp print four similar elements using emmet -->
+    <span class="Class Class2 Class3">First</span>
+    <span class="Class Class2 Class3">Second</span>
+    <span class="Class Class2 Class3">Third</span>
+    <span class="Class Class2 Class3">Fourth</span>
+
+
+
+    <!-- to add space in the sentence use &nbsp i.e. non-breaking space and other entities can be taken from google. -->
+    <div class="container">
+        <p> this is a &nbsp paragraph</p>
+        <p>Paragraph is written like this &lt;p&gt;</p> 
+        <p>Copyright is written like this &copy;</p> 
+        <p>Pound is written like this &pound;;</p> 
+        <p>Empty character is written like this &#8203;</p> 
+    </div>
+
+    
+
+    <!-- for other semantic tags refer https://developer.mozilla.org/en-US/docs/Glossary/Semantics -->
+    <h3>Semantic Elements</h3>
+    <details>
+        <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+        A keyboard.
+    </details>
+    
+</body>
+</html>
